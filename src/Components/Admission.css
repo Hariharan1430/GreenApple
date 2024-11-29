@@ -1,0 +1,377 @@
+@font-face { 
+  font-family: "Cobbler-Medium";
+  src: url("https://db.onlinewebfonts.com/t/0c4a68636410d35c73e9d6d47babf86c.eot");
+  src: url("https://db.onlinewebfonts.com/t/0c4a68636410d35c73e9d6d47babf86c.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0c4a68636410d35c73e9d6d47babf86c.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0c4a68636410d35c73e9d6d47babf86c.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/0c4a68636410d35c73e9d6d47babf86c.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0c4a68636410d35c73e9d6d47babf86c.svg#Cobbler-Medium")
+      format("svg");
+}
+
+
+
+.admission-form-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admission-header-box {
+  background-color: #eff8ff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #dcdcdc;
+}
+
+.admission-header-box h1 {
+  color: #0A6375;
+  font-family: "Cobbler-Medium";
+  font-size: 36px;
+  margin: 0;
+}
+
+.admission-header-box p {
+  font-family: "Cobbler-Medium";
+  font-weight: 400;
+  font-size: 22px;
+  color: #0A6375;
+  margin: 0;
+}
+
+.admission-student-info-box, .parent-info-box {
+  background-color: #EEF9FF;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #dcdcdc;
+}
+
+.admission-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.admission-field-left, .admission-field-right, .admission-field-full {
+  width: 48%;
+}
+
+.admission-field-full {
+  width: 100%;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #B7E6FF; 
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+label {
+  font-family: "Cobbler-Medium";
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+.admission-radio-group {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.admission-radio-option {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.admission-radio-option input {
+  margin-right: 5px;
+}
+
+.admission-radio-option label {
+  margin: 0;
+}
+
+.admission-date-field {
+  position: relative;
+}
+
+.admission-date-field .icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.admission-buttons-row {
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.admission-submit-btn {
+  font-family: "Cobbler-Medium";
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background-color: #005E90;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 25px;
+}
+
+.admission-download-btn {
+  font-family: "Cobbler-Medium";
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background-color: rgba(0, 94, 144, 0.50);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 25px;
+}
+
+.admission-download-btn .download-icon {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+}
+
+.admission-download-btn {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.admission-download-btn img {
+  margin-left: 8px;
+  height: 30px;
+}
+
+input, select, textarea {
+  border: 1px solid #B7E6FF; 
+  border-radius: 4px;
+}
+
+.admission-Lastimagediv {
+  position: relative;
+  margin-top: 5%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.admission-Imagetext {
+  position: absolute;
+  color: #FFF;
+  font-family: "Cobbler-Medium";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.admission-text-image-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 3%; 
+  margin-left: 5%;
+}
+
+.admission-text-container {
+  width: 30%;
+}
+
+.admission-text-container h1 {
+  font-family: "Cobbler-Medium";
+  font-size: 36px;
+  color: #005E90;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.admission-text-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+  margin-bottom: 30px;
+}
+
+.admission-learn-more-btn {
+  font-family: "Cobbler-Medium";
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background-color: #0A6375;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admission-learn-more-btn:hover {
+  background-color: #01579b;
+}
+
+.admission-image-container {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admission-image1 {
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+  z-index: 1;
+}
+
+.admission-image2 {
+  position: absolute;
+  width: 40%;
+  bottom: 15%;
+  z-index: 2;
+  animation: moveUpDown 3s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-30px); 
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1700px) {
+  .admission-text-image-container {
+padding : 0px ;
+}
+  .admission-text-container {
+      width: 50%;
+  }
+
+  .admission-image2 {
+      width:60%; 
+      bottom: 10%;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .admission-image-container{
+    width: 100%;
+  }
+  .admission-image2 {
+    top: 40%;
+      width: 55%; 
+  }
+  .admission-text-image-container {
+    flex-direction: column-reverse;
+}
+ .admission-Imagetext{
+  font-size: 13px;
+ }
+ .admission-row {
+  flex-direction: column;
+}
+
+.admission-field-left, .admission-field-right {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.admission-header-box h1, .admission-header-box p {
+  font-size: 24px; 
+}
+
+.admission-submit-btn, .admission-download-btn {
+  font-size: 14px; 
+  margin:30px 30px 0px 30px;
+}
+
+.admission-radio-group {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.admission-radio-option {
+  margin-right: 10px;
+}
+
+.admission-radio-option input {
+  margin-right: 5px;
+  transform: scale(1.2); 
+}
+
+label {
+  font-size: 16px; 
+}
+
+input, select, textarea {
+  padding: 12px; 
+  font-size: 16px; 
+}
+
+.admission-date-field .icon {
+  top: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+}
+.admission-text-container h1{
+  font-size: 25px;
+}
+.admission-text-container{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admission-Lastimage{
+  height: 100px;
+}
+}
+
+

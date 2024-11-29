@@ -1,0 +1,73 @@
+
+.header {
+    display: flex;
+    background-color: #005E90; /* Header background color */
+    color: #f8f6f9;
+    padding: 10px 20px; /* Standard padding */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Spread items horizontally */
+    position: relative; /* Keep elements aligned consistently */
+    width: 100%; /* Full-width header */
+  }
+
+  .contact-info {
+    font-family: "Cobbler-Medium";
+    font-size: 16px; /* Standard font size */
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between contact items */
+    margin-left: 8%;
+  }
+
+  .contact-info span {
+    display: flex;
+    align-items: center;
+    font-size: inherit; /* Inherit font size */
+  }
+
+  .contact-info a {
+    color: white;
+    text-decoration: none;
+    margin-left: 5px; /* Space between icon and text */
+  }
+
+  .icons {
+    width: 14px; /* Standard icon size */
+    height: auto;
+    margin-right: 5px; /* Space between icon and text */
+  }
+
+  .social-media {
+    margin-right: 15%;
+    font-family: "Cobbler-Medium";
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between social media icons */
+  }
+
+  .social-media span {
+    margin-right: 10px; /* Space between text and icons */
+  }
+
+  .social-media .icons {
+    width: 14px; /* Match icon size with contact-info */
+    height: auto;
+  }
+  
+@media (max-width: 850px) {
+    .header {
+      display: none;
+    }
+  }
+  @media (min-width: 851px) and (max-width: 1200px){
+
+   .contact-info{
+    font-size: 14px;
+    margin: 0px;
+   }
+   .social-media{
+    font-size: 14px;
+    margin: 0px;
+   }
+
+  }

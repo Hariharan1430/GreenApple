@@ -1,0 +1,229 @@
+@font-face { 
+  font-family: "Cobbler-Medium";
+  src: url("https://db.onlinewebfonts.com/t/0c4a68636410d35c73e9d6d47babf86c.eot");
+  src: url("https://db.onlinewebfonts.com/t/0c4a68636410d35c73e9d6d47babf86c.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0c4a68636410d35c73e9d6d47babf86c.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0c4a68636410d35c73e9d6d47babf86c.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/0c4a68636410d35c73e9d6d47babf86c.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0c4a68636410d35c73e9d6d47babf86c.svg#Cobbler-Medium")
+      format("svg");
+}
+
+.form-wrapper {
+  margin-top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullbox {
+  width: 40%;
+  background-color: #EEF9FF;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  top: -15px;
+  right: -30px;
+  font-size: 30px;
+  background-color: #f0f7fc;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  text-align: center;
+  margin-top: 1px;
+}
+
+.form-container h2 {
+  font-size: 20px;
+  font-family: "Cobbler-Medium";
+  margin-bottom: 20px;
+  color: #171A1F;
+  padding: 30px;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.dropdown-heading {
+  font-family: "Cobbler-Medium";
+  margin-bottom: 5px;
+  font-size: 16px;
+  display: block;
+  text-align: left;
+  color: #333;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 48%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #B7E6FF;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #333;
+}
+
+
+.disclaimer {
+  font-family: "Cobbler-Medium";
+  display: flex;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  font-family: "Cobbler-Medium";
+  padding: 0.75rem 5rem;
+  font-size: 1rem;
+  background-color: #005E90;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 25px;
+  margin-top: 10px;
+}
+
+/* Responsive design */
+
+@media (max-width: 1200px) {
+   .form-wrapper{
+    margin-bottom: 50px;
+  }
+
+.fullbox {
+  width: 70%;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.submit-button {
+  padding: 0.75rem 4rem;
+}
+}
+
+@media (max-width: 992px) {
+
+  .form-wrapper{
+    margin-bottom: 30px;
+  }
+
+.fullbox {
+  width: 60%;
+}
+
+.form-container h2 {
+  font-size: 23px;
+  padding: 15px;
+}
+
+.submit-button {
+  padding: 0.75rem 3rem;
+  font-size: 0.9rem;
+}
+}
+
+@media (max-width: 768px) {
+  .form-wrapper{
+    margin-bottom: 30px;
+  }
+
+
+.fullbox {
+  width: 70%;
+}
+
+.input-row {
+  flex-direction: column;
+}
+
+.input-field {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-container h2 {
+  font-size: 21px;
+}
+
+.submit-button {
+  padding: 0.75rem 2.5rem;
+  font-size: 0.9rem;
+}
+}
+
+@media (max-width: 600px) {
+
+  .form-wrapper{
+    margin-top: 50px;
+  }
+.fullbox {
+  width: 80%;
+}
+
+.form-container h2 {
+  font-size: 20px;
+}
+
+.submit-button {
+  padding: 0.75rem 2rem;
+  font-size: 0.8rem;
+}
+}
+
+@media (max-width: 480px) {
+  .form-wrapper{
+    margin-top: 50px;
+  }
+.fullbox {
+  width: 80%;
+  padding: 15px;
+}
+
+.form-container h2 {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.submit-button {
+  padding: 0.5rem 1.5rem;
+  font-size: 0.75rem;
+}
+}

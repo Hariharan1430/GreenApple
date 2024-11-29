@@ -1,0 +1,254 @@
+
+.gallery-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.gallery-navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 700px;
+  height: 73px;
+  border-radius: 50px;
+  border: 1px solid #005E90;
+  margin: 30px auto;
+}
+
+.gallery-navbar button {
+  font-family: "Cobbler-Medium";
+  color: #58595B;
+  border: none;
+  background: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+}
+
+.gallery-navbar .active {
+  font-weight: bold;
+  color: #005E90;
+}
+
+.gallery-navbar button:hover {
+  color: #005E90;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.frame-container {
+  margin-top: 20px;
+}
+
+.image-frame {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.left-column, .center-column, .right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-column img:first-child {
+  width: 320px;
+  height: 457px;
+}
+
+.left-column img:last-child {
+  width: 320px;
+  height: 219px;
+}
+
+.center-column img:first-child {
+  width: 321px;
+  height: 219px;
+}
+
+.center-column img:last-child {
+  width: 320px;
+  height: 457px;
+}
+
+.right-column img {
+  width: 320px;
+  height: 219px;
+}
+
+.image-frame img {
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.image-frame img:hover {
+  transform: scale(1.05);
+}
+
+/* Decorative images */
+.rocket-image,
+.balloon-image,
+.bee-image,
+.teddy-image {
+  position: absolute;
+  animation: float-up-down 6s infinite ease-in-out;
+}
+
+/* Rocket positioning */
+.rocket-image {
+  top: 80px;
+  right: 17%;
+  z-index: -1;
+}
+
+/* Bee positioning */
+.bee-image {
+  top: 30px;
+  left: 18%;
+  width: 71px;
+  animation: move-left-right 4s infinite ease-in-out;
+  z-index: -1;
+}
+
+/* Balloon positioning */
+.balloon-image {
+  top: 330px;
+  left: 8%;
+  width: 91px;
+}
+
+/* Teddy positioning */
+.teddy-image {
+  top: 300px;
+    right: 5%;
+}
+
+@keyframes float-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-left-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+}
+}
+.image-grid img:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+/* Responsive Styles */
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .gallery-container {
+    padding: 5px;
+  }
+
+  .gallery-navbar {
+    padding: 20px;
+    height: auto;
+    width: 90%;
+  }
+
+  .gallery-navbar button {
+    font-size: 13px;
+    padding: 3px;
+  }
+
+  .image-frame {
+    width: 100%;
+    flex-direction: column;
+    gap: 15px; 
+  }
+
+  .left-column, .right-column, .center-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+  }
+
+  .left-column img, .center-column img, .right-column img {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 15px; 
+  }
+
+  .rocket-image, .bee-image, .balloon-image, .teddy-image {
+    display: none;
+  }
+}
+
+/* Tablet View */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .gallery-container {
+    margin-left: 70px;
+    padding: 15px;
+  }
+
+  .gallery-navbar {
+    width: 80%; 
+    height: 60px;
+    padding: 15px;
+  }
+
+  .gallery-navbar button {
+    font-size: 16px; 
+  }
+
+  .image-frame {
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px; 
+    margin: 0 auto;
+  }
+
+  .left-column, .center-column, .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    width: 100%;
+  }
+
+  .left-column img:first-child,
+  .center-column img:first-child,
+  .right-column img {
+    width: 90%; 
+    height: auto;
+  }
+
+  .left-column img:last-child,
+  .center-column img:last-child {
+    width: 90%;
+    height: auto;
+  }
+
+  .rocket-image, .bee-image, .balloon-image, .teddy-image {
+    display: none;
+  }
+}

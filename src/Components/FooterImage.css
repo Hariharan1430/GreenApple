@@ -1,0 +1,250 @@
+@font-face {
+  font-family: "Cobbler-Light";
+  src: url("https://db.onlinewebfonts.com/t/95d916eb076161b75613f42a9def645c.eot");
+  src: url("https://db.onlinewebfonts.com/t/95d916eb076161b75613f42a9def645c.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/95d916eb076161b75613f42a9def645c.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/95d916eb076161b75613f42a9def645c.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/95d916eb076161b75613f42a9def645c.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/95d916eb076161b75613f42a9def645c.svg#Cobbler-Light")
+      format("svg");
+}
+.Footercloud1{
+  position: absolute;
+  left: 40%;
+  top: 14%;
+  animation: float-up-down 5s infinite ease-in-out;
+
+}
+.Footercloud2{
+  position: absolute;
+  left: 55%;
+  top: 18%;
+  animation: float-down-up 5s infinite ease-in-out;
+
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+
+.footer-content {
+  font-family: "Cobbler-Medium";
+  color:#005E90;
+  z-index: 7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10rem; 
+    position: absolute;
+    width: 100%;
+}
+
+.footer-details{
+  font-family: "Cobbler-Light";
+  font-weight: 20px;
+  font-weight: bold;
+  width: max-content;
+
+}
+.footer-icon{
+  width: 50px;
+  height: 27px;
+  
+}
+.footer-title {
+  font-family: "Cobbler-Light";
+
+  font-size: 25px;
+  font-weight: bold;
+}
+.footer-spacer{
+  margin-right: 20%;
+}
+
+.footer-info {
+  margin-bottom: 15%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+;
+}
+.footer-info1{
+  margin-left: 50px;
+
+}
+
+
+.background-box {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Third Box (Copyright Box) */
+.copyright-box {
+  text-align: center;
+  font-size: 14px;
+  background-color: #005E90;
+  padding: 10px 0;
+}
+  
+  @media (max-width: 600px) {
+    
+
+    
+    .footer-background-img {
+      bottom: 0;
+      top: auto;
+      height: auto; /* Ensure it adjusts to content */
+      z-index: -1;
+    }
+  
+    .footer-container {
+      margin-top: 60px;
+      height: auto; /* Remove fixed height to prevent unnecessary scrolling */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center content vertically */
+      align-items: center; /* Center content horizontally */
+    }
+  
+    .footer-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center the content horizontally */
+      padding: 0; /* Remove padding for mobile */
+      text-align: center; /* Center text alignment */
+    }
+  
+    .footer-icon {
+      width: 20px;
+      height: 20px; /* Adjust icon size for mobile */
+    }
+  
+    .footer-title {
+      font-size: 16px;
+    }
+  
+    .footer-details {
+      font-size: 13px;
+    }
+  
+    .footer-social-icons {
+      width: 70px;
+    }
+  
+    .footer-info {
+      margin-bottom: 12%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Align icons and text in the center */
+      gap: 0.5rem;
+    }
+    .footer-info1{
+      margin-left: 0px;
+    
+    }
+    .copyright-box{
+      width: 100%;
+    }
+    .copyright-box p{
+      font-size: 13px;
+    }
+    .Footercloud1{
+      width: 20%;
+      left: 10%;
+  top: 10%;
+
+    }
+    .Footercloud2{
+      left: 70%;
+    top: 20%;
+    }
+  }
+
+
+
+@media (min-width: 601px) and (max-width: 900px){
+
+  
+  .footer-background-img {
+    bottom: 0;
+    top: auto;
+    height: auto; /* Ensure it adjusts to content */
+    z-index: -1;
+  }
+    
+    .footer-content{
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      padding: 1.25rem;
+    }
+    .footer-title{
+      font-size: 23px;
+    }
+    .footer-details{
+      font-size: 18px;
+    }
+    .footer-info{
+      margin-bottom: 10%;
+    }
+    .copyright-box{
+      width: 100%;
+    }
+    .Footercloud2{
+      left: 32%;
+    top: 40%;
+    }
+  
+  }
+  @media (min-width: 901px) and (max-width: 1300px){
+    
+  
+    .footer-background-img {
+      bottom: 0;
+      top: auto;
+      height: auto; /* Ensure it adjusts to content */
+      z-index: -1;
+    }
+      
+      .footer-content{
+        display: flex;
+        align-items: flex-start;
+        padding: 1.25rem;
+      }
+      .footer-title{
+        font-size: 23px;
+      }
+      .footer-details{
+        font-size: 18px;
+      }
+      .footer-info{
+        margin-bottom: 10%;
+      }
+      .copyright-box{
+        width: 100%;
+      }
+    }
+    @keyframes float-down-up {
+      0%, 100% {
+          transform: translateY(0);
+      }
+      50% {
+          transform: translateY(50px);
+      }
+    }

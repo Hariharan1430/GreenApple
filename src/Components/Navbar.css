@@ -1,0 +1,260 @@
+/* Import Fonts */
+@font-face {
+  font-family: "Cobbler-Medium";
+  src: url("https://db.onlinewebfonts.com/t/0c4a68636410d35c73e9d6d47babf86c.eot");
+  src: url("https://db.onlinewebfonts.com/t/0c4a68636410d35c73e9d6d47babf86c.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0c4a68636410d35c73e9d6d47babf86c.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0c4a68636410d35c73e9d6d47babf86c.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/0c4a68636410d35c73e9d6d47babf86c.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0c4a68636410d35c73e9d6d47babf86c.svg#Cobbler-Medium")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Cobbler-Light";
+  src: url("https://db.onlinewebfonts.com/t/95d916eb076161b75613f42a9def645c.eot");
+  src: url("https://db.onlinewebfonts.com/t/95d916eb076161b75613f42a9def645c.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/95d916eb076161b75613f42a9def645c.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/95d916eb076161b75613f42a9def645c.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/95d916eb076161b75613f42a9def645c.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/95d916eb076161b75613f42a9def645c.svg#Cobbler-Light")
+      format("svg");
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; 
+  padding: 10px; 
+  background: #f8f6f9;
+  width: 100%;
+  position: relative; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  z-index: 1000; 
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.greenapple-logo {
+  width: auto; 
+  height: auto;
+}
+
+/* Desktop Menu */
+.desktop-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  font-family: "Cobbler-Medium";
+  font-size: 18px;
+  text-decoration: none;
+  color: #58595b;
+  padding: 0 50px; 
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.nav-links:hover {
+  color: #005e90;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.enquire-button {
+  text-decoration: none;
+  font-family: "Cobbler-Medium";
+  font-size: 18px;
+  padding: 8px 16px;
+  border: 1px solid #005e90;
+  color: #005e90;
+  margin-left: 30px;
+  background-color: rgba(0, 94, 144, 0.1);
+  border-radius: 9999px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.enquire-button:hover {
+  background-color: #005e90;
+  color: white;
+}
+
+/* Mobile Menu Wrapper */
+.mobile-menu-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Mobile Menu Toggle Button */
+.mobile-menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #005e90;
+}
+
+/* Enquire Button for Mobile */
+.enquire-button-mobile {
+  text-decoration: none;
+  display: none;
+  font-family: "Cobbler-Medium";
+  font-size: 16px;
+  padding: 6px 12px;
+  border: 1px solid #005e90;
+  color: #005e90;
+  background-color: rgba(0, 94, 144, 0.1);
+  border-radius: 9999px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 10px;
+}
+
+.enquire-button-mobile:hover {
+  background-color: #005e90;
+  color: white;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  width: 100%;
+  background-color: #317ca4;
+  z-index: 999;
+  text-align: center;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0; 
+  overflow: hidden;
+}
+
+.mobile-menu.show {
+  display: flex;
+  max-height: 500px; 
+}
+
+.mobile-nav-links {
+  font-family: "Cobbler-Medium";
+  font-size: 18px;
+  padding: 15px 0;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.mobile-nav-links:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: black;
+}
+
+/* Media Queries */
+  /* Adjustments for tablets */
+
+  @media (min-width: 1301px) and (max-width: 1332px){
+    .nav-links{
+      font-size: 16px;
+    }
+
+  }
+
+@media (max-width: 1300px) {
+  .desktop-menu{
+    margin-left: 50px;
+  }
+  .greenapple-logo {
+    width: 80px;
+  }
+
+  .nav-links {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .enquire-button {
+    margin-left: 50px;
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+}
+  /* Adjustments for small tablets and large phones */
+/* @media (max-width: 768px) {
+  .desktop-menu{
+    margin-left: 50px;
+  }
+  .greenapple-logo {
+    width: 70px;
+  }
+
+  .nav-links {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .enquire-button {
+    margin-left: 50px;
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+} */
+
+
+@media (max-width: 850px) {
+  .navbar{
+    justify-content: space-between;
+  }
+  /* Hide desktop menu and show mobile menu */
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .enquire-button-mobile {
+    margin-right: 30px;
+    display: block;
+  }
+
+  /* Adjust logo size for mobile */
+  .greenapple-logo {
+    margin-left: 30px;
+    width: 60px;
+  }
+
+  /* Ensure mobile menu is hidden by default */
+  .mobile-menu {
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .mobile-menu.show {
+    max-height: 1000px; /* Enough height to show all menu items */
+  }
+
+  .mobile-nav-links {
+    font-size: 16px;
+    padding: 12px 0;
+  }
+
+  .enquire-button-mobile {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
