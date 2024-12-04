@@ -29,7 +29,7 @@ const WhyUs: React.FC = () => {
         <h2 className="whyus-contact-heading">Why Us?</h2>
 
         {/* Floating Images */}
-        <img src={SunIcon} alt="Sun" className="floating-image sun" />
+        <img src={SunIcon} alt="Sun" className="sun1" />
         <img src={RocketIcon} alt="Rocket" className="floating-image rocket" /> 
         <img    
           src={BalloonIcon1}

@@ -9,17 +9,13 @@ import Image5 from '../Contactus-elements/desktop/aboutus-groupphoto.png'
 import Cloudimage from "../../src/Contactus-elements/cloud.svg";
 import Homeimage from "../../src/Contactus-elements/Home.svg";
 import HeartBallon from "../../src/Contactus-elements/HeartBallon.svg";
-import TreeImage from "../../src/Contactus-elements/Tree.svg";
 import RocketImage from "../../src/Contactus-elements/roc.svg";
 import Bigcloud  from "../../src/Contactus-elements/Bigcloud.svg";
 import Butterfly from "../../src/Contactus-elements/butterfly (1).svg"
 import YellowBaloon from "../../src/Contactus-elements/Contactus-Yellow baloon.svg"
 import Butterfly1 from "../../src/Contactus-elements/Butterfly.svg"
 import Star from "../../src/Contactus-elements/Star.svg"
-import Sun from "../../src/Contactus-elements/Contactus-sun.svg"
 import Flower from "../../src/Contactus-elements/Flower.svg"
-
-
 
 
 const About = () => {
@@ -82,7 +78,7 @@ const About = () => {
           </p>
           <h3>Chairman</h3>
 
-          <h1 style={{marginBottom:'4%'}}>Sundara Lakshmi</h1>
+          <h1 style={{marginBottom:'7%'}}>Sundara Lakshmi</h1>
           
         
       </div>
@@ -107,7 +103,7 @@ const About = () => {
           <div className="about-image">
           <img src={Bigcloud} alt="cloud" className="bigcloud" />
 
-            <img src={Image2} alt="Our Mission"  style={{width:'90%'}}/>
+            <img src={Image2} alt="Our Mission" />
 
           </div>
         </div>
