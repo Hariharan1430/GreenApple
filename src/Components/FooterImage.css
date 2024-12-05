@@ -76,7 +76,7 @@
 ;
 }
 .footer-info1{
-  margin-left: 50px;
+  margin-left: 60px;
 
 }
 
@@ -210,8 +210,19 @@
       left: 32%;
     top: 40%;
     }
-  
+
+}
+  @media (min-width: 601px) and (max-width: 767px){
+
+    .Footercloud1,.Footercloud2{
+      display: none;
+    }
+
+    .footer-social-icons{
+      margin-left: 33px;
+    }
   }
+
   @media (min-width: 901px) and (max-width: 1300px){
     
   

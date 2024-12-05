@@ -44,19 +44,15 @@
      overflow-x: hidden;
   
   } 
-     
+  
    
-.homecontainer{
-    background-color: #f9f9f9;
-
-}
   .banner-image {
     
-        background-image: url("../../public/HomeAssest/banner-1440.png"); /* Add your image path here */
+        background-image: url("../../public/HomeAssest/HOME-BANNER-1300X600-trans.webp"); /* Add your image path here */
         background-size: cover; /* Resize the background image to cover the container */
         background-position: center; /* Center the background image */
         width: 100%;
-        height: 620px; /* Set a height for the banner */
+        height: 100vh;
         transition: transform 0.3s ease; /* Smooth transition for the banner */
        
     }
@@ -87,8 +83,7 @@ line-height: normal;
   }
   
   .homecloud {
-    margin-bottom: -160px;
-    opacity: 30%;
+    display: none;
   }
   
   .homeballoon {
@@ -301,7 +296,7 @@ line-height: normal;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5% 5% 0% 5%;
+    padding: 5% 10% 0% 10%;
     margin: 0 auto;
   
     gap:7%;
@@ -681,13 +676,7 @@ line-height: normal;
     
     /* Tablet screens */
     @media (max-width: 767px) {
-        .banner-image {
-    
-            background-image: url("../../public/HomeAssest/mobile.png"); /* Add your image path here */
-            height: 270px;
-            
-           
-        }
+       
       .testinomial-cards-container {
         flex-direction: column; /* Stack the cards vertically */
         align-items: center;
@@ -731,14 +720,12 @@ line-height: normal;
       }
     
       .testinomial-card h1 {
-        font-size: 42px; /* Slightly larger font for laptop screens */
+        font-size: 30px; /* Slightly larger font for laptop screens */
        
       }
     
       p {
-        font-size: 26px; /* Keep text legible */
         font-style: normal;
-    
         font-weight: 400;
         line-height: 1.6;
         
@@ -751,9 +738,20 @@ line-height: normal;
    
     }
   
+
+    @media (max-width: 420px){
+      .banner-image {
+    
+        background-image: url("../../public/HomeAssest/mobile.png"); /* Add your image path here */
+        height: 270px;
+        
+       
+    }
+
+    }
   
   @media (max-width: 600px) {
-
+    
     .testinomial-card p{
         font-family: "Cobbler-Medium";
 
@@ -820,9 +818,7 @@ font-size: 24px;
 
  /* imagetextbox */
   .truck-gif {
-    position: absolute;
-    top: -140px;
-    height: 400px;
+  display: none;
   }
   
   

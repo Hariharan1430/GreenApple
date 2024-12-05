@@ -112,13 +112,14 @@
     font-family: Cobbler-Medium;
     font-size: 30px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
   }
   .box2 h3{
+    margin-top: 20px;
     color: #005E90;
     font-family: Cobbler-Medium;
-    font-size: 22px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -158,6 +159,7 @@ line-height: normal;
 }
  
  .box3 h3{
+  margin-bottom: -15px;
   color: #005E90;
 font-family: Cobbler-Medium;
 font-size: 30.15px;
@@ -166,6 +168,7 @@ font-weight: 500;
 line-height: normal;
  }
  .box3 h1{
+  margin-bottom: 30px;
   color: #005E90;
 font-family: Cobbler-Medium;
 font-size: 48px;
@@ -312,6 +315,7 @@ line-height: 24px;
   .about-text h1,
   .box3 h1,
   .box5 h1 {
+    margin: auto;
     font-size: 30px; 
   }
 
@@ -356,7 +360,7 @@ line-height: 24px;
   .about-text h1,
   .box3 h1,
   .box5 h1 {
-    font-size: 24px; 
+    font-size: 35px; 
   }
 
   .mission p,
@@ -369,7 +373,7 @@ line-height: 24px;
   .box2 h3,
   .box3 h3 {
     padding: 0%;
-    font-size: 24px; 
+    font-size: 35px; 
   }
 
   .mission-text,
@@ -420,16 +424,18 @@ line-height: 24px;
 @media (max-width: 600px) {
 
   .mission-text h1{
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .about-text h1{
-    font-size: 40px;
+    font-size: 30px;
   }
   .box3 h3{
+    margin-bottom: 0.5px;
     font-size: 25px;
   }
   .box3 h1{
+    margin: auto;
     font-size: 30px;
   }
   .box1 .background-image {
@@ -463,6 +469,7 @@ line-height: 24px;
   .founder-image img,
   .principle-image img
    {
+    margin-top: 20px;
     width: 100%;
   }
 

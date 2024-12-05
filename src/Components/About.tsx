@@ -78,7 +78,7 @@ const About = () => {
           </p>
           <h3>Chairman</h3>
 
-          <h1 style={{marginBottom:'7%'}}>Sundara Lakshmi</h1>
+          <h1 style={{marginBottom:'5%'}}>Sundara Lakshmi</h1>
           
         
       </div>
