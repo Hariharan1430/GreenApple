@@ -50,7 +50,6 @@
     
         background-image: url("../../public/HomeAssest/HOME-BANNER-1300X600-trans.webp"); /* Add your image path here */
         background-size: cover; /* Resize the background image to cover the container */
-        background-position: center; /* Center the background image */
         width: 100%;
         height: 100vh;
         transition: transform 0.3s ease; /* Smooth transition for the banner */
@@ -115,7 +114,7 @@ line-height: normal;
   
   /* Individual card styles */
   .home-card {
-    flex: 1 1 10%; /* Adjust size to fit three cards in a row */
+    flex: 1 1 ; /* Adjust size to fit three cards in a row */
     text-align: center;
     padding: 20px;
     border-radius: 8px;
@@ -195,6 +194,7 @@ line-height: normal;
   @media (max-width: 767px) {
     
     .home-cards-container {
+      margin-top: 30px;
       flex-direction: column; /* Stack the cards vertically */
       align-items: center;
     }
@@ -471,17 +471,26 @@ line-height: normal;
   
     
   }
-  
-  /* Tablet (431px to 768px) */
-  @media (min-width: 601px) and (max-width: 768px) {
+  @media (min-width: 421px) and (max-width: 650px) {
     .banner-image {
     
         background-image: url("../../public/HomeAssest/banner-744-tab\ view.png"); /* Add your image path here */
-        height: 300px;
+        height: 280px;
         
        
     }
+  }
   
+  /* Tablet (431px to 768px) */
+  @media (min-width: 651px) and (max-width: 768px) {
+    .banner-image {
+    
+        background-image: url("../../public/HomeAssest/banner-744-tab\ view.png"); /* Add your image path here */
+        height: 400px;
+        
+       
+    }
+    
     .welcome-section {
       margin-top: -50px;
       flex-direction: column;
@@ -737,13 +746,21 @@ line-height: normal;
     }
    
     }
-  
-
-    @media (max-width: 420px){
+    @media (min-width: 351px) and (max-width: 420px){
       .banner-image {
     
         background-image: url("../../public/HomeAssest/mobile.png"); /* Add your image path here */
         height: 270px;
+        
+       
+    }
+
+    }
+    @media (max-width: 350px){
+      .banner-image {
+    
+        background-image: url("../../public/HomeAssest/mobile.png"); /* Add your image path here */
+        height: 250px;
         
        
     }
@@ -927,7 +944,6 @@ font-size: 24px;
     box-sizing: content-box;
     position: relative;
     margin: 40px auto; /* Center the container */
-    padding-left: 4px;
   }
   
   .truck-gif {
@@ -1352,20 +1368,18 @@ font-size: 24px;
     
   .homebox-container {
     background:  url('../../public/Playarea/Blue\ bg.png') no-repeat center center;
-    background-size: contain; /* Adjusts the background image to cover the entire container */
+    background-size: contain;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10px;
-    width: 100%; /* Make it responsive to the screen width */
-    height: 460px; /* Auto height to ensure it adjusts to content */
+  
+    width: 100%; 
+    height: 460px; 
     box-sizing: content-box;
     position: relative;
-    margin: 40px auto; /* Center the container */
-    margin-right: -240px;
-    margin-left: 10px;
-    padding-left: 4px;
+    margin: 40px auto; 
+  
   }
   
   .truck-gif {
@@ -1400,7 +1414,6 @@ font-size: 24px;
   }
   
   .stats-container {
-    margin-left: 10px;
     margin-top: -50px;
     display: grid;
     grid-template-columns: 1fr 1fr;

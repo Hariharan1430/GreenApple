@@ -27,7 +27,7 @@ const HomePage: React.FC = () => {
 
             {/* deceration images */}
       <div className="sky-colour">
-        <img
+        {/* <img
           src="./HomeAssest/sun.svg"
           alt="Sun"
           className="homesun-image"
@@ -51,7 +51,7 @@ const HomePage: React.FC = () => {
           alt="Cloud"
           className="homecloud"
           style={{ bottom: `${verticalOffset(10)}px` }}
-        />
+        /> */}
 
    
       </div> 
@@ -99,7 +99,7 @@ const HomePage: React.FC = () => {
         <h1 className="home-heading">Active Learning</h1>
         <p className="home-paragraph">
           In Green Apple Kids, We make Sure Each and every Kid is Going through a very Joyful Learning 
-          Curve without any Tiredy Behaviour and Active Always.
+          Curve without any Tiredy Behaviour and Active Happy Learning
         </p>
         <button>Read More</button>
       </div>
@@ -125,15 +125,15 @@ const HomePage: React.FC = () => {
           </p>
           <button className="read-more-button">Read More</button>
           <div className="additional-images">
-            <img
+            {/* <img
               src="./HomeAssest/Butterfly (2).svg"
               alt="Butterfly"
               className="butterfly-image"
-            />
+            /> */}
           </div> 
         </div>
 
-         <img
+         {/* <img
           src="./HomeAssest/moving cloud.svg"
           alt="Cloud"
           className="moving-cloud"
@@ -144,7 +144,7 @@ const HomePage: React.FC = () => {
           alt="Cloud"
           className="cloud-image"
           style={{ bottom: `${verticalOffset(10)}px` }}
-        /> 
+        />  */}
         
         <div>
         <img
@@ -159,12 +159,12 @@ const HomePage: React.FC = () => {
 
                 {/* deceration images */}
 
-      <img
+      {/* <img
           src="./HomeAssest/plane.svg"
           alt="plane-image"
           className="plane-image"
           style={{ bottom: `${verticalOffset(15)}px` }}
-        /> 
+        />  */}
 
                 {/* Box 4*/}
       <div className="homebox-container">
@@ -202,12 +202,12 @@ const HomePage: React.FC = () => {
     </div>
   </div>
 
-  <img
+  {/* <img
             src="./HomeAssest/plane.svg"
             alt="plane"
             className="plane-images"
             style={{ bottom: `${verticalOffset(15)}px` }}
-          />
+          /> */}
 
                 {/* Box 5*/}
 
@@ -261,7 +261,7 @@ const HomePage: React.FC = () => {
         />
         <h1>Saravana Kumar P</h1>
         <p>
-        I could feel the flourishing growth of my daughter Srithar after I joined her with green apple kids. Now she became very cheerful all the time.
+        I could feel the flourishing growth of my daughter Srithar after I joined her with green apple kids. Now she became very cheerful all the time and Active 
         </p>
        
       </div>

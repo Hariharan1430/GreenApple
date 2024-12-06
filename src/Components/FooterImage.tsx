@@ -31,8 +31,8 @@ const FooterImage = () => {
         {/* Right Side */}
         <div className="footer-right">
           <div className="footer-info">
-            <img src="./footerwithimage/icon3.svg" className="footer-icon" alt="" />
-            <div>
+          <img src="./footerwithimage/icon3.svg" className="footer-icon emailicon" alt="" />
+                      <div className="footer-rightup">
               <p className="footer-title">Contact Us</p>
               <p className="footer-details">+91 4566 22422, <br /> Greenapplekids68@gmail.com</p>
             </div>
@@ -43,7 +43,7 @@ const FooterImage = () => {
 
 
           <div className="footer-info1">
-            <div>
+            <div  className="footer-rightdown">
               <p className="footer-title">Stay Connected</p>
               <img src="./footerwithimage/3icons.svg" className="footer-social-icons" alt="" />
             </div>

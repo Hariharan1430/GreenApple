@@ -205,7 +205,6 @@
 /* Tablet View */
 @media (min-width: 769px) and (max-width: 1024px) {
   .gallery-container {
-    margin-left: 70px;
     padding: 15px;
   }
 
@@ -251,4 +250,10 @@
   .rocket-image, .bee-image, .balloon-image, .teddy-image {
     display: none;
   }
+}
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .rocket-image, .bee-image, .balloon-image, .teddy-image {
+    display: none;
+  }
+
 }

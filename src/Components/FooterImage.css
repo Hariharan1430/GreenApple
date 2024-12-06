@@ -184,7 +184,7 @@
   .footer-background-img {
     bottom: 0;
     top: auto;
-    height: auto; /* Ensure it adjusts to content */
+    height: auto; 
     z-index: -1;
   }
     
@@ -193,6 +193,7 @@
       display: flex;
       align-items: flex-start;
       padding: 1.25rem;
+     
     }
     .footer-title{
       font-size: 23px;
@@ -210,16 +211,31 @@
       left: 32%;
     top: 40%;
     }
+    .copyright-box p{
+      margin: auto;
+    }
 
 }
   @media (min-width: 601px) and (max-width: 767px){
+    .emailicon{
+      margin-right: -20px;
+    }
 
     .Footercloud1,.Footercloud2{
       display: none;
     }
 
     .footer-social-icons{
-      margin-left: 33px;
+      margin-left: 40px;
+    }
+    .footer-rightup{
+      margin-right: 40px;
+    }
+    .footer-rightdown{
+      margin-left: -30px;
+    }
+    .admission-text-container{
+      align-items: center;
     }
   }
 

@@ -58,10 +58,11 @@
   }
 
   .YellowBaloon{
-    width: 13%;
+    width: 10%;
     position: relative;
     top: -130px;
-    left: -100px;
+    left: 90%;
+    animation: float-up-down 5s infinite ease-in-out;
   }
 
  .bigcloud1{
@@ -103,6 +104,7 @@
     width: 100%;
     background-image: url('../../public/desktop/banner.png');
     background-size: cover;
+    background-position: center;
   }
   
   /* Box 2 - About Us */
@@ -110,7 +112,7 @@
   .box2 h2{
     color: #005E90;
     font-family: Cobbler-Medium;
-    font-size: 30px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -119,7 +121,7 @@
     margin-top: 20px;
     color: #005E90;
     font-family: Cobbler-Medium;
-    font-size: 25px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -168,7 +170,6 @@ font-weight: 500;
 line-height: normal;
  }
  .box3 h1{
-  margin-bottom: 30px;
   color: #005E90;
 font-family: Cobbler-Medium;
 font-size: 48px;
@@ -186,7 +187,9 @@ line-height: 24px;
 width: 70%;
 margin: 1% 0 1% 0%;
  }
-
+.founder-image{
+  margin-top: 40px;
+}
   .founder-text {
     text-align: center;
   }
@@ -231,6 +234,12 @@ line-height: 24px;
   /* Responsive Design */
  /* General Mobile and Tablet Adjustments */
 
+ @media (max-width: 1300px) and (min-width: 1025px){
+  .aboutFlower{
+    display: none;
+  }
+ } 
+
 @media (max-width: 1100px) and (min-width: 1024px){
 .heartballon,.aboutFlower,.aboutsun,.aboutRocket,.bigcloud1,.bigcloud,.Butterfly,.Butterfly1,.homeimage,.starimage,.YellowBaloon{
   display: none;
@@ -255,6 +264,7 @@ line-height: 24px;
   
 }
 @media (max-width: 1024px) {
+ 
   
   .about-us{
     flex-direction: column-reverse;
@@ -295,6 +305,7 @@ line-height: 24px;
   }
 }
 @media (max-width: 1024px) and (min-width: 769px) {
+  
   .box2 .about-us{
     margin: auto;
   }
@@ -316,7 +327,6 @@ line-height: 24px;
   .box3 h1,
   .box5 h1 {
     margin: auto;
-    font-size: 30px; 
   }
 
   .about-text p,
@@ -347,6 +357,9 @@ line-height: 24px;
 
 /* Mobile-Specific Adjustments */
 @media (max-width: 768px) and (min-width: 601px) {
+  .box2 h2{
+    font-size: 35px;
+  }
   
   .box2 .about-us{
     margin: auto;
@@ -369,11 +382,16 @@ line-height: 24px;
     font-size: 20px; 
   }
 
-  .box2 h1,
-  .box2 h3,
-  .box3 h3 {
+  .box2 h1
+  
+   {
     padding: 0%;
     font-size: 35px; 
+  }
+
+  .box2 h3,
+  .box3 h3{
+    font-size: 28px;
   }
 
   .mission-text,
@@ -408,7 +426,7 @@ line-height: 24px;
   .about-image img,
   .principle-image img,
   .mission-image img {
-    width: 100%;
+    width: 80%;
   }
   .box5 .mission {
     display: flex;
@@ -422,6 +440,15 @@ line-height: 24px;
 }
 
 @media (max-width: 600px) {
+
+  .box2 h3{
+    font-size: 25px;
+  }
+
+  .box2 h2{
+    font-size: 30px;
+    font-weight: 500;
+  }
 
   .mission-text h1{
     font-size: 30px;
@@ -469,7 +496,7 @@ line-height: 24px;
   .founder-image img,
   .principle-image img
    {
-    margin-top: 20px;
+    margin-top: -20px;
     width: 100%;
   }
 

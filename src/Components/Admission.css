@@ -236,7 +236,7 @@ input, select, textarea {
   font-family: "Cobbler-Medium";
   padding: 0.75rem 2rem;
   font-size: 1rem;
-  background-color: #0A6375;
+  background-color: #005E90;
   color: white;
   border: none;
   border-radius: 25px;
@@ -296,6 +296,16 @@ padding : 0px ;
   }
 }
 
+@media (min-width: 601px) and (max-width: 767px){
+  .admission-text-container p{
+    margin: auto;
+  }
+  .admission-text-container h1{
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+}
 
 
 @media (max-width: 600px) {

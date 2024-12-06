@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../Contactus-elements/logo 1.png"; 
+import logo from "../Contactus-elements/apple new vertical logo.svg"; 
+import Hamberger from "../Contactus-elements/Hambery.svg"
+import CrossIcon from "../Contactus-elements/CrossIcon.svg"
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -52,7 +54,13 @@ const Navbar = () => {
           aria-label="Toggle menu"
           aria-expanded={isMenuOpen}
         >
-          <span>{isMenuOpen ? "▲" : "▼"}</span>
+         <span>
+  {isMenuOpen ? (
+    <img src={CrossIcon} alt="Close Menu" className="icon-cross" />
+  ) : (
+    <img src={Hamberger} alt="Open Menu" className="icon-hamburger" />
+  )}
+</span>
         </button>
 
         <Link to="/enquire" className="enquire-button-mobile">

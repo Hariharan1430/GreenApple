@@ -35,8 +35,8 @@
 
 .close-button {
   position: absolute;
-  top: -15px;
-  right: -30px;
+  top: -17px;
+  right: -40px;
   font-size: 30px;
   background-color: #f0f7fc;
   border: 2px solid #ccc;
@@ -48,7 +48,6 @@
   align-items: center;
   cursor: pointer;
   color: #333;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-container {

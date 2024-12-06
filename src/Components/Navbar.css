@@ -34,7 +34,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly; 
-  padding: 10px; 
+  padding: 30px; 
   background: #f8f6f9;
   width: 100%;
   position: relative; 
@@ -63,7 +63,7 @@
   font-size: 18px;
   text-decoration: none;
   color: #58595b;
-  padding: 0 50px; 
+  padding: 0 30px; 
   transition: color 0.3s, text-decoration 0.3s;
 }
 
@@ -94,6 +94,7 @@
 /* Mobile Menu Wrapper */
 .mobile-menu-wrapper {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
 }
 
@@ -163,26 +164,27 @@
 }
 
 /* Media Queries */
-  /* Adjustments for tablets */
+  /* Responsive for all */
 
   @media (min-width: 1301px) and (max-width: 1332px){
     .nav-links{
       font-size: 16px;
+      padding: 30px;
     }
 
   }
 
-@media (max-width: 1300px) {
+  @media (min-width: 1001px) and (max-width: 1300px) {
   .desktop-menu{
-    margin-left: 50px;
+    margin-left: 30px;
   }
   .greenapple-logo {
-    width: 80px;
+    width: 160px;
   }
 
   .nav-links {
-    font-size: 16px;
-    padding: 0 15px;
+    font-size: 17px;
+     padding: 0 22px;
   }
 
   .enquire-button {
@@ -191,30 +193,28 @@
     padding: 6px 12px;
   }
 }
-  /* Adjustments for small tablets and large phones */
-/* @media (max-width: 768px) {
-  .desktop-menu{
-    margin-left: 50px;
-  }
-  .greenapple-logo {
-    width: 70px;
-  }
-
+  
+@media (min-width: 751px) and (max-width: 1000px){
   .nav-links {
     font-size: 15px;
-    padding: 0 10px;
+     padding: 0 8px;
   }
-
+  .greenapple-logo {
+    width: 130px;
+  }
   .enquire-button {
-    margin-left: 50px;
+    margin-left: 30px;
     font-size: 15px;
-    padding: 5px 10px;
+   
   }
-} */
 
+}
 
-@media (max-width: 850px) {
+@media (max-width: 750px) {
+
+  
   .navbar{
+    padding:10px;
     justify-content: space-between;
   }
   /* Hide desktop menu and show mobile menu */
@@ -223,18 +223,19 @@
   }
 
   .mobile-menu-icon {
+    padding: 15px;
     display: block;
   }
 
   .enquire-button-mobile {
-    margin-right: 30px;
+    /* margin-right: 30px; */
     display: block;
   }
 
   /* Adjust logo size for mobile */
   .greenapple-logo {
     margin-left: 30px;
-    width: 60px;
+    width: 130px;
   }
 
   /* Ensure mobile menu is hidden by default */
@@ -257,4 +258,12 @@
     font-size: 14px;
     padding: 5px 10px;
   }
+}
+@media (max-width: 344px){
+
+  .greenapple-logo {
+    margin-left: 20px;
+    width: 100px;
+  }
+
 }
